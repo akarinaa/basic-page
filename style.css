@@ -1,0 +1,166 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #f1edeb;
+    font-family: Roboto, Arial, sans-serif;
+    line-height: 1.5;
+    color: #263131;
+}
+
+a:link, a:visited {
+    color: #a8b2b6;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fbc76d;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='search'],
+textarea {
+    border: 1px solid #ddd;
+    padding: 5px;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+input[type='submit'],
+input[type='button'] {
+    display: block;
+    background-color: #263131;
+    color: #fff;
+    border: 1px solid #263131;
+    font-family: Roboto, Arial, sans-serif;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+#cabecalho {
+    width: 100%;
+    text-align: center;
+    padding: 50px 0px;
+}
+
+#menu-principal {
+    width: 100%;
+    background-color: #263131;
+    padding: 10px 0;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#menu-principal ul {
+    list-style: none;
+    padding: 0;
+}
+
+#menu-principal li {
+    display: inline-block;
+    margin: 0 25px;
+}
+
+#menu-principal li a {
+    color: #fff;
+}
+
+#menu-principal li a:hover {
+    color: #fbc76d;
+}
+
+#conteudo {
+    display: flex;
+    flex-direction: row;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.feed {
+    width: 70%;
+    margin-right: 20px;
+}
+
+.post {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.data {
+    background-color: #a8b2b6;
+    padding: 3px 5px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.post .titulo {
+    margin: 5px 0;
+}
+
+#barra-lateral {
+    width: 30%;
+}
+
+#barra-lateral ul {
+    list-style: none;
+}
+
+.widget {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#rodape {
+    width: 100%;
+    background-color: #263131;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.contato input[type='text'],
+.contato input[type='email'],
+.contato fieldset,
+.contato textarea {
+    display: block;
+}
+
+.contato fieldset {
+    border: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.contato input[type='text'],
+.contato input[type='email'],
+.contato textarea {
+    border: 1px solid #ddd;
+    padding: 5px;
+    font-family: Roboto, Arial, sans-serif;
+    min-width: 400px;
+    margin-bottom: 20px;
+}
+
+.contato input[type='radio'] {
+    margin-left: 20px;
+}
+
+@media (max-width: 800px) {
+    #conteudo {
+        flex-direction: column;
+    }
+
+    #barra-lateral, .feed {
+        width: 100%;
+    }
+
+    #menu-principal li {
+        display: block;
+        margin: 10px 0;
+    }
+}
