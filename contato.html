@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="cabecalho">
+        <h1>Título do site</h1>
+        <p>Descrição do site.</p>
+    </header>
+    <nav id="menu-principal">
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    <main id="conteudo">
+        <section class="feed">
+            <article class="post">
+                <header>
+                    <h2 class="titulo">Contato</h2>
+                </header>
+                    <form class="contato">
+                        <label for="seu-nome">Seu nome:</label>
+                        <input type='text' id="seu-nome" required='yes'>
+
+                        <label for="seu-email">Seu e-mail:</label>
+                        <input type='email' id="seu-email" required='yes'>
+
+                        <fieldset>
+                            <label for="seu-assunto">Assunto:</label>
+                            <input type='radio' id="financeiro" name='seu-assunto' value='financeiro'>
+                            <label for="financeiro">Financeiro</label>
+
+                            <input type='radio' id="duvidas" name='seu-assunto' value='duvidas'>
+                            <label for="duvidas">Dúvidas</label>
+                        </fieldset>
+                        
+                        <label for="sua-mensagem">Mensagem:</label>
+                        <textarea id="sua-mensagem" name='sua-mensagem' rows='5' cols='50' required='yes'></textarea>
+
+                        <input type='submit' value="Enviar">
+                    </form>
+            </article>
+        </section>
+        
+        <aside id="barra-lateral">
+            <div class="widget">
+                <h2>Sobre mim</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel placerat mi, eu hendrerit enim. Maecenas sagittis, metus eget porttitor rutrum, diam velit tincidunt est, ac scelerisque risus neque ac eros.</p>
+            </div>
+
+            <div class="widget">
+                <h2>Pesquise</h2>
+                <form>
+                    <input type='search' name='q' placeholder="Digite aqui">
+                    <input type='submit' value='Pesquisar'>
+                </form>
+            </div>
+
+            <div class="widget">
+                <h2>Arquivo</h2>
+                <ul>
+                    <li><a href="#">Janeiro 2021</a></li>
+                    <li><a href="#">Fevereiro 2021</a></li>
+                    <li><a href="#">Março 2021</a></li>
+                </ul>
+            </div>            
+        </aside>
+    </main>
+    <footer id="rodape">
+        Criado por <a href="https://github.com/akarinaa">Karina Angelim</a>.
+    </footer>
+</body>
+</html>
