@@ -39,6 +39,13 @@ input[type='button'] {
     margin: 10px 0;
 }
 
+.all-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
 #cabecalho {
     width: 100%;
     text-align: center;
@@ -77,6 +84,7 @@ input[type='button'] {
     flex-direction: row;
     max-width: 1000px;
     margin: 20px auto;
+    flex: 1;
 }
 
 .feed {
@@ -121,6 +129,7 @@ input[type='button'] {
     color: #fff;
     padding: 10px 0;
     text-align: center;
+    align-self: flex-end;
 }
 
 .contato input[type='text'],
